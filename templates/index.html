@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>首頁</title>
-    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.css')}}">
-</head>
+{% block title %}
+首頁
+{% endblock %}
 
-<body>
-    <h1>Flask專案+BS</h1>
-    <script src="{{url_for('static',filename='js/bootstrap.bundle.js')}}"></script>
-</body>
-
-</html>
+{% block content %}
+<h2>這是新內容</h2>
+{% endblock %}
